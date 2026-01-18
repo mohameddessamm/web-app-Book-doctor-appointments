@@ -8,7 +8,8 @@ import setRoutes from './routes';
 
 const app = express();
 app.set('port', (process.env.PORT || 3000));
-app.use('/', express.static(pathJoin(__dirname, '../public')));
+// ابحث عن هذا السطر وغيره ليكون هكذا:
+app.use('/', express.static(pathJoin(__dirname, '../public/browser')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 if (process.env.NODE_ENV !== 'test') {
@@ -21,7 +22,8 @@ const main = async (): Promise<void> => {
   try {
     await connectToMongo();
     app.get('/*', (req, res) => {
-      res.sendFile(pathJoin(__dirname, '../public/index.html'));
+    
+          res.sendFile(pathJoin(__dirname, '../public/browser/index.html'));
     });
     app.listen(app.get('port'), () => console.log(`Angular Full Stack listening on port ${app.get('port')}`));
   } catch (err) {

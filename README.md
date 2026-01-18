@@ -66,14 +66,11 @@ Run `ng test` to execute the frontend unit tests via [Karma](https://karma-runne
 
 Run `npm run test:be` to execute the backend tests via [Jest](https://jestjs.io/) (it requires `mongod` already running).
 
-## Running linters
-Run `npm run lint` to execute [Angular ESLint](https://github.com/angular-eslint/angular-eslint), [HTML linting](https://github.com/htmlhint/HTMLHint) and [SASS linting](https://github.com/sasstools/sass-lint).
 
 ## Wiki
-To get more help about this project, [visit the official wiki](https://github.com/DavideViolante/Angular-Full-Stack/wiki).
 
 ## Further help
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ### Author
-* [Davide Violante](https://github.com/DavideViolante)
+* [mohamed esam](https://github.com/mohameddessamm)

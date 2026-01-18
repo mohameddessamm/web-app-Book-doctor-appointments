@@ -4,21 +4,21 @@
 
 @if (!isLoading) {
   <div class="card mb-3">
-    <h4 class="card-header">Current cats ({{cats.length}})</h4>
+    <h4 class="card-header">Current the patient({{cats.length}})</h4>
     <div class="card-body">
       <table class="table table-bordered">
         <thead class="table-secondary">
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Age</th>
-            <th scope="col">Weight</th>
+            <th scope="col">phone</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
         @if (cats.length === 0) {
           <tbody>
             <tr>
-              <td colspan="4">There are no cats in the DB. Add a new cat below.</td>
+              <td colspan="4">There are no the patient in the DB. Add a new the patient.</td>
             </tr>
           </tbody>
         }
@@ -56,7 +56,7 @@
                         required>
                     </div>
                     <div class="col">
-                      <input class="form-control" type="number" name="weight" [(ngModel)]="cat.weight" placeholder="Weight"
+                      <input class="form-control" type="number" name="phone" [(ngModel)]="cat.weight" placeholder="phone"
                         step="any" min="0" required>
                     </div>
                     <div class="col d-flex align-items-center">
