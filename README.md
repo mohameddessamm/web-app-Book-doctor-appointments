@@ -65,7 +65,7 @@ Run `ng test` to execute the frontend unit tests via [Karma](https://karma-runne
 Run `npm run test:be` to execute the backend tests via [Jest](https://jestjs.io/) (it requires `mongod` already running).
 
 
-## Wiki
+
 
 ## Further help
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
